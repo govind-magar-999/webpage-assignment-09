@@ -1,0 +1,433 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8f8fa;
+  margin: 0;
+}
+
+h1, h2 {
+  font-size: 28px;
+}
+
+header {
+  background-color: #4617fe;
+  padding: 40px;
+}
+
+.header-image, 
+.faq-image img{
+  width:-webkit-fill-available;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav a {
+  margin: 10px 0;
+}
+
+nav svg {
+  margin: 10px 0;
+}
+
+.nav-item-active {
+  width: fit-content;
+}
+
+.nav-item {
+  padding: 0 25px;
+}
+
+.nav-item-active {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #4617fe;
+  padding: 5px 10px;
+}
+
+.header-text,
+.nav-item {
+  color: #fff;
+}
+
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin:40px; 
+}
+
+.company-items {
+  color: black;
+  font-family: "Righteous", sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  text-decoration: none;
+  margin: 20px 0;
+}
+
+.api {
+  margin: 0 40px;
+}
+
+.blog-heading {
+  margin: 40px;
+}
+
+.api-heading,
+.blog-heading h1 {
+  font-weight: 900;
+}
+
+.blog-cards {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.card,
+.card-active {
+  padding: 30px 25px;
+}
+
+.author-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.card-active {
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.card-active:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-head-active,
+.card-head {
+  font-weight: 900;
+}
+
+.card-head-active {
+  color: #5b32fc;
+}
+
+.blog-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.blog-content > h6{
+  color: #552bfd;
+  font-weight: 900;
+}
+
+.blog-link {
+  color: #5c33fc;
+  text-decoration: none;
+}
+
+.faq-section {
+  background-color: #e9edff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.faq-content > button {
+  background-color: #5a31fc;
+  border-radius: 4px;
+  color: #fff;
+  height: 35px;
+  padding: 5px 15px;
+  border-style: none;
+}
+
+.faq-content p {
+  font-size: 14px;
+}
+
+.faq-content h2 {
+  font-weight: 900;
+}
+
+.download-section {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+
+.download-content > h1 > span {
+  font-weight: 500;
+}
+
+.footer-section {
+  background-color: #4617fe;
+  color: #fff;
+  padding: 40px;
+}
+
+.footer-left ul,
+.footer-right ul {
+  padding-left: 0;
+}
+
+.footer-left ul,
+.logos-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.footer-left ul li,
+.footer-right ul li {
+  margin: 10px 0;
+}
+
+.footer-left ul li:not(:last-child),
+.footer-right ul li:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+
+.footer-right-social {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.footer-logos:not(:first-child){
+  margin-left: 20px;
+}
+
+.download-email > form > input {
+  background-color: #e9edff;
+  border-style: none;
+  height: 50px;
+  width: -webkit-fill-available;
+  border-radius: 25px;
+  padding-left: 20px;
+}
+
+.download-email {
+  position: relative;
+}
+
+.download-email > form > input::placeholder { 
+  color: #000;
+  font-weight: 900;
+}
+
+.download-email > form > button {
+  border-style: none;
+  background-color: #5a31fc;
+  border-radius: 25px;
+  color: #fff;
+  height: 44px;
+  width: 25vw;
+}
+
+.download-email > form > button {
+  right: 1vw;
+  position: absolute;
+  top: 4px;
+}
+
+.footer-left  ul li,
+.footer-right  ul li {
+  padding: 0 20px 0 20px;
+}
+
+.footer-left  ul li:first-child,
+.footer-right  ul li:first-child {
+  padding-left: 0;
+}
+
+@media (min-width: 600px) {
+  .companies {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .faq-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .faq-image img {
+    width: 45vw;
+  }
+
+  .faq-content {
+    width: 40vw;
+  }
+
+  .faq-content h2 {
+    margin: 0;
+  }
+
+  h1, h2 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 768px) {
+  .blog-cards {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .blog-cards {
+    margin-bottom: 60px;
+  }
+
+  .faq-section {
+    align-items: center;
+    padding: 0 0 0 40px;
+  }
+
+  .header-bar,
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-bar {
+    margin-bottom: 40px;
+  }
+
+  .header-wrapper {
+    position: relative;
+  }  
+
+  .companies {
+    justify-content: flex-start;
+    gap: 30px;
+  }
+
+  .header-image {
+    position: absolute;
+    width: auto;
+    right: -40px;
+    top: 0;
+  }
+
+  .header-text {
+    width: 45%;
+  }
+
+  .download-section {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .download-email > form > button {
+    right: 0.5vw;
+    width: 20%;
+  }
+  .download-content {
+    width: 40%;
+  }
+
+  .download-email {
+    width: 60%;
+  }
+
+  .faq-content {
+    padding: 20px 0;
+  }
+
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cards {
+    gap: 0;
+  }
+
+  .card-active, .card {
+    width: 15%;
+  }
+
+  .blog-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  header {
+    height: 400px;
+  }
+
+  .blog-card {
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 40px 0 0;
+    width: 50%;
+    border-top-left-radius: 50px;
+  }
+
+  .content-wrapper {
+    width: 60%;
+  }
+
+  .author-content {
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 240px;
+  }
+  
+  .blog-author {
+    padding-top: 5px;
+  }
+
+  .content-wrapper {
+    position: relative;
+  }
+}
+
+@media (min-width: 1440px) {
+  h1, h2 {
+    font-size: 40px;
+  }
+
+  .companies {
+    gap: 80px;
+  }
+}
